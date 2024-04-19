@@ -15,31 +15,69 @@ a {
   font-family: "Roboto", sans-serif;
 }
 
+html,
 body {
-  background-color: #f2f2f2;
-  color: #444;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #f5f5f5; /* Light gray */
+  color: #333333; /* Dark gray */
   line-height: 1.6;
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Header, Content, Footer */
 }
 
 .container {
   max-width: 800px;
   margin: 50px auto;
-  background-color: #fff;
+  background-color: #ffffff; /* White */
   padding: 20px 40px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  flex: 1;
+}
+
+header,
+footer {
+  background-color: #333333; /* Dark gray */
+  color: #ffffff; /* White */
+  padding: 20px 0;
+}
+
+footer {
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-text {
+  justify-content: center;
+  font-size: 3rem; /* Adjust size as needed */
+  color: #ffffff; /* White */
+  font-family: "Open Sans", sans-serif;
+}
+
+footer p {
+  text-align: center;
 }
 
 h1 {
   font-size: 2.8em;
   margin-bottom: 30px;
-  color: #333;
+  color: #333333; /* Dark gray */
 }
 
 h2 {
   font-size: 1.8em;
   margin-bottom: 20px;
-  color: #555;
+  color: #555555; /* Slightly lighter gray */
 }
 
 p,
@@ -51,14 +89,14 @@ textarea {
 small {
   display: block;
   margin-bottom: 25px;
-  color: #888;
+  color: #888888; /* Light gray */
 }
 
 input,
 textarea {
   width: calc(100% - 20px);
   padding: 12px;
-  border: 2px solid #ddd;
+  border: 2px solid #dddddd; /* Lighter gray */
   border-radius: 6px;
   font-size: 1em;
   outline: none;
@@ -67,14 +105,13 @@ textarea {
 
 input:focus,
 textarea:focus {
-  border-color: #007bff;
+  border-color: #007bff; /* Accent: Green */
 }
 
-a,
 button {
   text-decoration: none;
-  background-color: #007bff;
-  color: #fff;
+  background-color: #5bb12e; /* Accent: Green */
+  color: #ffffff; /* White */
   padding: 12px 20px;
   font-size: 1em;
   border: none;
@@ -89,9 +126,8 @@ button.full-width {
   width: 100%;
 }
 
-a,
 button:hover {
-  background-color: #0056b3;
+  background-color: #3e7c18; /* Accent Hover: Darker Green */
 }
 
 ul {
@@ -100,40 +136,51 @@ ul {
 
 li {
   padding: 25px 0;
-  border-bottom: 2px solid #eee;
+  border-bottom: 2px solid #eeeeee; /* Lighter gray */
 }
 
 li:last-child {
   border-bottom: none;
 }
 
-a.edit {
-  background-color: #007bff;
-  /* margin-right: 10px; */
+a.edit,
+a.delete {
+  text-decoration: none;
+  color: #ffffff; /* White */
+  padding: 12px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-a.delete {
-  background-color: #e74c3c;
+.edit {
+  background-color: #5bb12e; /* Accent: Green */
+}
+
+.delete {
+  background-color: #e74c3c; /* Red */
 }
 
 a.delete:hover {
-  background-color: #c0392b;
+  background-color: #c0392b; /* Darker Red */
 }
 
 #newPostBtn {
   margin: 30px 0;
-  background-color: #2ecc71;
+  background-color: #5bb12e; /* Accent: Green */
   padding: 12px 20px;
   font-size: 1em;
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s;
   border: none;
-  color: #fff;
+  color: #ffffff; /* White */
   text-align: center;
   text-decoration: none;
 }
 
 #newPostBtn:hover {
-  background-color: #27ae60;
+  background-color: #3e7c18; /* Accent Hover: Darker Green */
 }
