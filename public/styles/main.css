@@ -1,4 +1,3 @@
-/* Reset some default browser styles */
 body,
 h1,
 h2,
@@ -49,7 +48,7 @@ body {
 .container {
   max-width: 800px;
   margin: 50px auto;
-  background-color: #ffffff; /* White */
+  background-color: #ffffff;
   padding: 20px 40px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -58,8 +57,8 @@ body {
 
 header,
 footer {
-  background-color: #333333; /* Dark gray */
-  color: #ffffff; /* White */
+  background-color: #333333;
+  color: #ffffff;
   padding: 20px 0;
 }
 
@@ -76,8 +75,8 @@ header .navbar {
 
 .logo-text {
   justify-content: center;
-  font-size: 3rem; /* Adjust size as needed */
-  color: #ffffff; /* White */
+  font-size: 3rem;
+  color: #ffffff;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -88,13 +87,13 @@ footer p {
 h1 {
   font-size: 2.8em;
   margin-bottom: 30px;
-  color: #333333; /* Dark gray */
+  color: #333333;
 }
 
 h2 {
   font-size: 1.8em;
   margin-bottom: 20px;
-  color: #555555; /* Slightly lighter gray */
+  color: #555555;
 }
 
 p,
@@ -106,14 +105,14 @@ textarea {
 small {
   display: block;
   margin-bottom: 25px;
-  color: #888888; /* Light gray */
+  color: #888888;
 }
 
 input,
 textarea {
   width: calc(100% - 20px);
   padding: 12px;
-  border: 2px solid #dddddd; /* Lighter gray */
+  border: 2px solid #dddddd;
   border-radius: 6px;
   font-size: 1em;
   outline: none;
@@ -122,13 +121,13 @@ textarea {
 
 input:focus,
 textarea:focus {
-  border-color: #007bff; /* Accent: Green */
+  border-color: #007bff;
 }
 
 button {
   text-decoration: none;
-  background-color: #5bb12e; /* Accent: Green */
-  color: #ffffff; /* White */
+  background-color: #5bb12e;
+  color: #ffffff;
   padding: 12px 20px;
   font-size: 1em;
   border: none;
@@ -144,7 +143,7 @@ button.full-width {
 }
 
 button:hover {
-  background-color: #3e7c18; /* Accent Hover: Darker Green */
+  background-color: #3e7c18;
 }
 
 ul {
@@ -153,7 +152,7 @@ ul {
 
 li {
   padding: 25px 0;
-  border-bottom: 2px solid #eeeeee; /* Lighter gray */
+  border-bottom: 2px solid #eeeeee;
 }
 
 li:last-child {
@@ -163,7 +162,7 @@ li:last-child {
 a.edit,
 a.delete {
   text-decoration: none;
-  color: #ffffff; /* White */
+  color: #ffffff;
   padding: 12px 20px;
   font-size: 1em;
   border: none;
@@ -173,31 +172,31 @@ a.delete {
 }
 
 .edit {
-  background-color: #5bb12e; /* Accent: Green */
+  background-color: #5bb12e;
 }
 
 .delete {
-  background-color: #e74c3c; /* Red */
+  background-color: #e74c3c;
 }
 
 a.delete:hover {
-  background-color: #c0392b; /* Darker Red */
+  background-color: #c0392b;
 }
 
 #newPostBtn {
   margin: 30px 0;
-  background-color: #5bb12e; /* Accent: Green */
+  background-color: #5bb12e;
   padding: 12px 20px;
   font-size: 1em;
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s;
   border: none;
-  color: #ffffff; /* White */
+  color: #ffffff;
   text-align: center;
   text-decoration: none;
 }
 
 #newPostBtn:hover {
-  background-color: #3e7c18; /* Accent Hover: Darker Green */
+  background-color: #3e7c18;
 }
