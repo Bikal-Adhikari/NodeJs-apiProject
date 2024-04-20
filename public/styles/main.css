@@ -55,7 +55,12 @@ body {
   flex: 1;
 }
 
-header,
+header {
+  background: green;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
 footer {
   background-color: #333333;
   color: #ffffff;
