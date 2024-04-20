@@ -202,3 +202,16 @@ a.delete:hover {
 #newPostBtn:hover {
   background-color: #3e7c18;
 }
+
+/* Media query for screen sizes less than 450px */
+@media (max-width: 450px) {
+  body {
+    background-size: 40px 40px;
+  }
+
+  .container {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+  }
+}
